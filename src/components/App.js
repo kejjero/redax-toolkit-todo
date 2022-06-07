@@ -32,11 +32,8 @@ function App() {
                         inputValue.length === 0 ?
                             <button
                                 disabled
-                                onClick={(e) => handlePostTodo(e)}
                                 style={{backgroundColor: '#65777F', cursor: 'default', color: 'lightgray'}}
-                            >
-                                Добавить
-                            </button>
+                            >Добавить</button>
                             :
                             <button onClick={(e) => handlePostTodo(e)}>Добавить</button>
                     }
