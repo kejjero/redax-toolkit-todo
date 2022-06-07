@@ -12,7 +12,7 @@ export const TodoSlice = createSlice({
             state.todos.push(name.payload)
         },
         removeTodo (state, index) {
-            const newTodo = state.todos.splice(index.payload, 1)
+            state.todos.splice(index.payload, 1)
         }
     },
 })
